@@ -1,8 +1,10 @@
-const express = require('express')
-const app = express()
+const express = require("express");
+const app = express();
 
-app.get('/', function(req, res){
-    res.render('Hello Word')
-})
+app.get("/home", (req, res) => {
+  res.render("Hello Word");
+});
 
-app.listen(3000)
+app.listen(3000, () => {
+  console.log("Servidor Conectado!");
+});
